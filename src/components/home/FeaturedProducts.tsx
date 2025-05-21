@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
     const loadProducts = async () => {
       try {
         setLoading(true);
-        const featuredProducts = await getFeaturedProducts(8);
+        const featuredProducts = await getFeaturedProducts();
         setProducts(featuredProducts);
       } catch (err) {
         setError('Failed to load featured products');
